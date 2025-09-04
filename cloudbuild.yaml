@@ -1,0 +1,91 @@
+# Cloud Build configuration for automated deployment
+steps:
+  # Build backend
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/flashcard-backend:$COMMIT_SHA', '-f', 'backend/Dockerfile.prod', './backend']
+    id: 'build-backend'
+
+  # Build frontend
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/flashcard-frontend:$COMMIT_SHA', '-f', 'frontend/Dockerfile.prod', './frontend']
+    id: 'build-frontend'
+
+  # Push backend image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/flashcard-backend:$COMMIT_SHA']
+    id: 'push-backend'
+    waitFor: ['build-backend']
+
+  # Push frontend image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/flashcard-frontend:$COMMIT_SHA']
+    id: 'push-frontend'
+    waitFor: ['build-frontend']
+
+  # Deploy backend
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'flashcard-backend'
+      - '--image=gcr.io/$PROJECT_ID/flashcard-backend:$COMMIT_SHA'
+      - '--region=$_REGION'
+      - '--platform=managed'
+      - '--allow-unauthenticated'
+    id: 'deploy-backend'
+    waitFor: ['push-backend']
+
+  # Get backend URL
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        BACKEND_URL=$$(gcloud run services describe flashcard-backend --platform managed --region $_REGION --format "value(status.url)")
+        echo "Backend URL: $$BACKEND_URL"
+        echo "$$BACKEND_URL" > /workspace/backend_url.txt
+    id: 'get-backend-url'
+    waitFor: ['deploy-backend']
+
+  # Deploy frontend with backend URL
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        BACKEND_URL=$$(cat /workspace/backend_url.txt)
+        gcloud run deploy flashcard-frontend \
+          --image=gcr.io/$PROJECT_ID/flashcard-frontend:$COMMIT_SHA \
+          --region=$_REGION \
+          --platform=managed \
+          --allow-unauthenticated \
+          --set-env-vars "REACT_APP_API_URL=$$BACKEND_URL"
+    id: 'deploy-frontend'
+    waitFor: ['push-frontend', 'get-backend-url']
+
+  # Update backend CORS settings
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        BACKEND_URL=$$(cat /workspace/backend_url.txt)
+        FRONTEND_URL=$$(gcloud run services describe flashcard-frontend --platform managed --region $_REGION --format "value(status.url)")
+        gcloud run services update flashcard-backend \
+          --platform managed \
+          --region $_REGION \
+          --set-env-vars "ALLOWED_ORIGINS=$$FRONTEND_URL,$$BACKEND_URL"
+    id: 'update-cors'
+    waitFor: ['deploy-frontend']
+
+# Substitutions for Cloud Build triggers
+substitutions:
+  _REGION: 'us-central1'
+
+# Build options
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: 'E2_HIGHCPU_8'
+
+# Build timeout
+timeout: '1800s'

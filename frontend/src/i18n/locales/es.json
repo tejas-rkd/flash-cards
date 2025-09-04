@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "Aplicación de Tarjetas de Estudio",
+    "subtitle": "Domina vocabulario con repetición espaciada"
+  },
+  "users": {
+    "selectUser": "Seleccionar Usuario",
+    "currentUser": "Usuario Actual",
+    "switchUser": "Cambiar Usuario",
+    "createFirstUser": "Crear Primer Usuario",
+    "addNewUser": "Agregar Nuevo Usuario",
+    "deleteUser": "Eliminar Usuario",
+    "confirmDelete": "Confirmar Eliminación",
+    "confirmDeleteMessage": "¿Estás seguro de que quieres eliminar al usuario \"{{name}}\"?",
+    "confirmDeleteWarning": "¡Esto también eliminará todas las tarjetas que pertenecen a este usuario!",
+    "userManagement": "Gestión de Usuarios",
+    "chooseUser": "Elige un usuario:",
+    "enterUserName": "Ingresa el nombre del usuario...",
+    "createUser": "Crear Usuario",
+    "creating": "Creando...",
+    "noUsers": "No se encontraron usuarios. ¡Crea tu primer usuario para comenzar!",
+    "maxUsersReached": "Se alcanzó el máximo de 5 usuarios. Elimina un usuario para agregar uno nuevo.",
+    "welcome": {
+      "title": "¡Bienvenido!",
+      "subtitle": "Selecciona o crea un usuario para comenzar a usar la aplicación de tarjetas. Cada usuario puede tener su propio conjunto de tarjetas y progreso de estudio."
+    },
+    "validation": {
+      "nameRequired": "Por favor ingresa un nombre de usuario.",
+      "nameExists": "El usuario '{{name}}' ya existe",
+      "nameEmpty": "El nombre de usuario no puede estar vacío"
+    },
+    "success": {
+      "created": "¡Usuario '{{name}}' creado exitosamente!",
+      "deleted": "¡Usuario '{{name}}' y sus {{count}} tarjetas eliminados exitosamente!"
+    },
+    "errors": {
+      "load": "Error al cargar usuarios. Inténtalo de nuevo.",
+      "create": "Error al crear usuario. Inténtalo de nuevo.",
+      "delete": "Error al eliminar usuario. Inténtalo de nuevo."
+    }
+  },
+  "navigation": {
+    "study": "Estudiar",
+    "create": "Crear Tarjeta",
+    "manage": "Gestionar Tarjetas",
+    "view": "Ver Todas las Tarjetas"
+  },
+  "study": {
+    "title": "Sesión de Estudio",
+    "clickToReveal": "Haz clic para revelar la definición",
+    "showAnswer": "Mostrar Respuesta",
+    "iGotIt": "¡Lo entendí!",
+    "iDidntGetIt": "No lo entendí",
+    "nextCard": "Siguiente Tarjeta",
+    "loading": "Cargando...",
+    "noCards": "No hay tarjetas disponibles para revisar.",
+    "noCardsUser": "No hay tarjetas disponibles para revisar para {{user}}.",
+    "checkForCards": "Buscar tarjetas",
+    "refresh": "Actualizar",
+    "selectUserFirst": "Por favor selecciona un usuario primero.",
+    "statusMessages": {
+      "readyToReview": "Listo para revisar: {{ready}} tarjetas, Tarjetas nuevas: {{new}}",
+      "temporarilyDone": "Has terminado temporalmente; vuelve más tarde para revisar más palabras.",
+      "permanentlyDone": "¡No tienes más palabras para revisar; has terminado permanentemente!",
+      "errorGeneric": "Ocurrió un error. Inténtalo de nuevo.",
+      "errorNetwork": "Error de red. Verifica tu conexión.",
+      "errorReview": "Error al enviar la revisión. Inténtalo de nuevo."
+    }
+  },
+  "create": {
+    "title": "Crear Nueva Tarjeta",
+    "titleWithUser": "Crear Nueva Tarjeta para {{user}}",
+    "word": "Palabra",
+    "wordPlaceholder": "Ingresa la palabra a aprender",
+    "definition": "Definición",
+    "definitionPlaceholder": "Ingresa la definición o explicación",
+    "createButton": "Crear Tarjeta",
+    "selectUserFirst": "Por favor selecciona un usuario primero.",
+    "success": "¡Tarjeta creada exitosamente!",
+    "successWithUser": "¡Tarjeta creada exitosamente para {{user}}!",
+    "errorCreate": "Error al crear la tarjeta. Inténtalo de nuevo.",
+    "validation": {
+      "requiredFields": "Por favor completa tanto la palabra como la definición.",
+      "wordExists": "La palabra ya existe o se proporcionaron datos inválidos.",
+      "wordTooLong": "La palabra debe tener menos de 100 caracteres",
+      "definitionTooLong": "La definición debe tener menos de 1000 caracteres",
+      "noUserSelected": "No hay usuario seleccionado"
+    }
+  },
+  "manage": {
+    "title": "Gestionar Tarjetas",
+    "titleWithUser": "Gestionar Tarjetas - {{user}}",
+    "totalCards": "Total de Tarjetas: {{count}}",
+    "showing": "Mostrando {{count}} de {{total}} tarjetas",
+    "refresh": "Actualizar",
+    "edit": "Editar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "confirmDelete": "Eliminar Tarjeta",
+    "confirmDeleteMessage": "¿Estás seguro de que quieres eliminar la tarjeta \"{{word}}\"? Esta acción no se puede deshacer.",
+    "emptyState": {
+      "noCards": "¡Aún no hay tarjetas!",
+      "noCardsMessage": "{{user}} aún no tiene tarjetas. ¡Crea tu primera tarjeta para comenzar a aprender!",
+      "createFirstCard": "📝 Crear Tu Primera Tarjeta",
+      "gettingStarted": "💡 Consejos para Empezar:",
+      "tips": [
+        "Comienza con palabras que quieres aprender",
+        "Mantén las definiciones claras y concisas",
+        "Agrega algunas tarjetas, luego practica con el modo Estudio",
+        "El sistema de repetición espaciada te ayudará a recordar"
+      ],
+      "noCardsFiltered": "No se encontraron tarjetas.",
+      "noCardsFilteredHelp": "Todas las tarjetas podrían estar filtradas por tu configuración actual.",
+      "includeAllCards": "Incluir Todas las Tarjetas"
+    },
+    "table": {
+      "word": "Palabra",
+      "definition": "Definición",
+      "status": "Estado",
+      "nextReview": "Próxima Revisión",
+      "incorrect": "Incorrectas",
+      "actions": "Acciones"
+    },
+    "status": {
+      "new": "Nueva",
+      "ready": "Lista para revisar",
+      "scheduled": "Programada para después",
+      "completed": "Completada (nunca revisar)",
+      "hard": "Difícil de recordar (oculta)"
+    },
+    "emptyState": {
+      "noCards": "¡Aún no hay tarjetas!",
+      "noCardsMessage": "{{userName}} aún no tiene tarjetas. ¡Crea tu primera tarjeta para comenzar a aprender!",
+      "createFirstCard": "📝 Crear Tu Primera Tarjeta",
+      "noCardsFiltered": "No se encontraron tarjetas.",
+      "cardsFilteredOut": "Todas las tarjetas podrían estar filtradas por tus configuraciones actuales.",
+      "includeAllCards": "Incluir Todas las Tarjetas",
+      "tipsTitle": "💡 Consejos para Comenzar:",
+      "tip1": "Comienza con palabras que quieras aprender",
+      "tip2": "Mantén las definiciones claras y concisas",
+      "tip3": "Agrega algunas tarjetas, luego practica con el modo de Estudio",
+      "tip4": "El sistema de repetición espaciada te ayudará a recordar"
+    },
+    "search": {
+      "noResults": "Ninguna tarjeta coincide con tus criterios de búsqueda.",
+      "tryAdjusting": "Intenta ajustar tu término de búsqueda o filtros.",
+      "clearSearch": "Limpiar Búsqueda",
+      "noteTitle": "Nota",
+      "noteDesc": "La búsqueda se aplica solo a la página actual. Usa la paginación para buscar en todas las tarjetas."
+    },
+    "deleteModal": {
+      "title": "Confirmar Eliminación",
+      "confirmation": "¿Estás seguro de que quieres eliminar esta tarjeta?"
+    },
+    "legend": {
+      "title": "Leyenda",
+      "ready": "🟢 Lista para revisar",
+      "scheduled": "🔵 Programada para después",
+      "completed": "⚫ Completada (nunca revisar)",
+      "hard": "🔴 Difícil de recordar (oculta)",
+      "actionsTitle": "Acciones",
+      "actionsDesc": "Editar para actualizar palabra/definición, Eliminar para quitar permanentemente"
+    },
+    "success": {
+      "update": "¡Tarjeta actualizada exitosamente!",
+      "delete": "¡Tarjeta eliminada exitosamente!"
+    },
+    "errors": {
+      "validation": "Por favor completa tanto la palabra como la definición.",
+      "duplicate": "La palabra ya existe o se proporcionaron datos inválidos.",
+      "update": "Error al actualizar la tarjeta. Inténtalo de nuevo.",
+      "delete": "Error al eliminar la tarjeta. Inténtalo de nuevo.",
+      "load": "Error al cargar las tarjetas. Inténtalo de nuevo."
+    }
+  },
+  "view": {
+    "title": "Todas las Tarjetas ({{count}})",
+    "emptyState": {
+      "noCards": "No se encontraron tarjetas. ¡Crea tu primera tarjeta para comenzar!"
+    },
+    "table": {
+      "word": "Palabra",
+      "definition": "Definición",
+      "status": "Estado",
+      "nextReview": "Próxima Revisión",
+      "incorrectCount": "Contador de Incorrectas",
+      "max": "Máx"
+    },
+    "bins": {
+      "new": "Nuevo",
+      "5seconds": "5 segundos",
+      "25seconds": "25 segundos",
+      "2minutes": "2 minutos",
+      "10minutes": "10 minutos",
+      "1hour": "1 hora",
+      "5hours": "5 horas",
+      "1day": "1 día",
+      "5days": "5 días",
+      "25days": "25 días",
+      "4months": "4 meses",
+      "completed": "Nunca (Completado)",
+      "default": "Casilla {{binNumber}}"
+    },
+    "status": {
+      "hardToRemember": "Difícil de Recordar"
+    },
+    "schedule": {
+      "readyNow": "Listo ahora",
+      "never": "Nunca",
+      "minutes": "{{count}} minutos",
+      "hours": "{{count}} horas",
+      "days": "{{count}} días"
+    },
+    "legend": {
+      "title": "Leyenda",
+      "ready": "🟢 Listo para revisar",
+      "scheduled": "🔵 Programado para más tarde",
+      "completed": "⚫ Completado (nunca revisar)",
+      "hard": "🔴 Difícil de recordar (oculto)"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "loadingCards": "Cargando tarjetas...",
+    "loadingError": "Error cargando tarjetas. Por favor intenta de nuevo.",
+    "noUserSelected": "Por favor selecciona un usuario primero.",
+    "refresh": "Actualizar",
+    "retry": "Reintentar",
+    "error": "Error",
+    "success": "Éxito",
+    "warning": "Advertencia",
+    "info": "Información",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "yes": "Sí",
+    "no": "No",
+    "required": "Requerido",
+    "optional": "Opcional",
+    "retry": "Reintentar",
+    "refresh": "Actualizar",
+    "loadingUsers": "Cargando usuarios...",
+    "loadingCards": "Cargando tarjetas...",
+    "noUserSelected": "Por favor selecciona un usuario primero."
+  },
+  "spaced_repetition": {
+    "bins": {
+      "0": "Nueva",
+      "1": "5s",
+      "2": "25s",
+      "3": "2m",
+      "4": "10m",
+      "5": "1h",
+      "6": "5h",
+      "7": "1d",
+      "8": "5d",
+      "9": "25d",
+      "10": "4me",
+      "11": "Hecho"
+    },
+    "binsFull": {
+      "0": "Nueva",
+      "1": "5 segundos",
+      "2": "25 segundos",
+      "3": "2 minutos",
+      "4": "10 minutos",
+      "5": "1 hora",
+      "6": "5 horas",
+      "7": "1 día",
+      "8": "5 días",
+      "9": "25 días",
+      "10": "4 meses",
+      "11": "Hecho"
+    }
+  },
+  "time": {
+    "never": "Nunca",
+    "now": "Ahora",
+    "justNow": "Justo ahora",
+    "secondsAgo": "hace {{count}} segundos",
+    "minutesAgo": "hace {{count}} minutos",
+    "hoursAgo": "hace {{count}} horas",
+    "daysAgo": "hace {{count}} días"
+  },
+  "language": {
+    "title": "Idioma",
+    "select": "Seleccionar Idioma",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "chinese": "中文",
+    "japanese": "日本語"
+  }
+}

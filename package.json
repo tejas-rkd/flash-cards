@@ -1,0 +1,21 @@
+{
+  "name": "flashcard-app",
+  "version": "1.0.0",
+  "description": "Full-stack flashcard application with spaced repetition",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && source venv/bin/activate && python main.py",
+    "dev:frontend": "cd frontend && npm start",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "install:backend": "cd backend && pip install -r requirements.txt",
+    "install:frontend": "cd frontend && npm install",
+    "docker:up": "docker-compose up --build",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": ["flashcards", "spaced-repetition", "learning", "react", "fastapi"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

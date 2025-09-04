@@ -1,0 +1,312 @@
+{
+  "app": {
+    "title": "Flashcard Learning App",
+    "subtitle": "Master vocabulary with spaced repetition"
+  },
+  "users": {
+    "selectUser": "Select User",
+    "currentUser": "Current User",
+    "switchUser": "Switch User",
+    "createFirstUser": "Create First User",
+    "addNewUser": "Add New User",
+    "deleteUser": "Delete User",
+    "confirmDelete": "Confirm Delete",
+    "confirmDeleteMessage": "Are you sure you want to delete user \"{{name}}\"?",
+    "confirmDeleteWarning": "This will also delete all flashcards belonging to this user!",
+    "userManagement": "User Management",
+    "chooseUser": "Choose a user:",
+    "enterUserName": "Enter user name...",
+    "createUser": "Create User",
+    "creating": "Creating...",
+    "noUsers": "No users found. Create your first user to get started!",
+    "maxUsersReached": "Maximum of 5 users reached. Delete a user to add a new one.",
+    "welcome": {
+      "title": "Welcome!",
+      "subtitle": "Select or create a user to start using the flashcard application. Each user can have their own set of flashcards and study progress."
+    },
+    "validation": {
+      "nameRequired": "Please enter a user name.",
+      "nameExists": "User '{{name}}' already exists",
+      "nameEmpty": "User name cannot be empty"
+    },
+    "success": {
+      "created": "User '{{name}}' created successfully!",
+      "deleted": "User '{{name}}' and their {{count}} flashcards deleted successfully!"
+    },
+    "errors": {
+      "load": "Error loading users. Please try again.",
+      "create": "Error creating user. Please try again.",
+      "delete": "Error deleting user. Please try again."
+    }
+  },
+  "navigation": {
+    "study": "Study",
+    "create": "Create Card",
+    "manage": "Manage Cards",
+    "view": "View All Cards"
+  },
+  "study": {
+    "title": "Study Session",
+    "clickToReveal": "Click to reveal definition",
+    "showAnswer": "Show Answer",
+    "iGotIt": "I got it!",
+    "iDidntGetIt": "I didn't get it",
+    "nextCard": "Next Card",
+    "loading": "Loading...",
+    "noCards": "No cards available for review.",
+    "noCardsUser": "No cards available for review for {{user}}.",
+    "checkForCards": "Check for cards",
+    "refresh": "Refresh",
+    "selectUserFirst": "Please select a user first.",
+    "statusMessages": {
+      "readyToReview": "Ready to review: {{ready}} cards, New cards: {{new}}",
+      "temporarilyDone": "You are temporarily done; please come back later to review more words.",
+      "permanentlyDone": "You have no more words to review; you are permanently done!",
+      "errorGeneric": "An error occurred. Please try again.",
+      "errorNetwork": "Network error. Please check your connection.",
+      "errorReview": "Error submitting review. Please try again."
+    }
+  },
+  "create": {
+    "title": "Create New Flashcard",
+    "titleWithUser": "Create New Flashcard for {{user}}",
+    "word": "Word",
+    "wordPlaceholder": "Enter the word to learn",
+    "definition": "Definition",
+    "definitionPlaceholder": "Enter the definition or explanation",
+    "createButton": "Create Flashcard",
+    "selectUserFirst": "Please select a user first.",
+    "success": "Flashcard created successfully!",
+    "successWithUser": "Flashcard created successfully for {{user}}!",
+    "errorCreate": "Error creating flashcard. Please try again.",
+    "validation": {
+      "requiredFields": "Please fill in both word and definition.",
+      "wordExists": "Word already exists or invalid data provided.",
+      "wordTooLong": "Word must be less than 100 characters",
+      "definitionTooLong": "Definition must be less than 1000 characters",
+      "noUserSelected": "No user selected"
+    }
+  },
+  "manage": {
+    "title": "Manage Flashcards",
+    "titleWithUser": "Manage Flashcards - {{user}}",
+    "totalCards": "Total Cards: {{count}}",
+    "showing": "Showing {{count}} of {{total}} flashcards",
+    "showingFiltered": "Showing {{count}} of {{total}} flashcards (filtered: {{filtered}} results)",
+    "refresh": "Refresh",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirmDelete": "Delete Card",
+    "confirmDeleteMessage": "Are you sure you want to delete the card \"{{word}}\"? This action cannot be undone.",
+    "search": {
+      "label": "Search:",
+      "placeholder": "Search by word or definition...",
+      "noResults": "No flashcards match your search criteria.",
+      "noResultsHelp": "Try adjusting your search term or filters.",
+      "clearSearch": "Clear Search"
+    },
+    "pagination": {
+      "itemsPerPage": "Items per page:",
+      "includeHard": "Include hard cards",
+      "page": "Page {{current}} of {{total}}",
+      "first": "« First",
+      "prev": "‹ Prev",
+      "next": "Next ›",
+      "last": "Last »"
+    },
+    "emptyState": {
+      "noCards": "No flashcards yet!",
+      "noCardsMessage": "{{user}} doesn't have any flashcards yet. Create your first flashcard to start learning!",
+      "createFirstCard": "📝 Create Your First Card",
+      "gettingStarted": "💡 Getting Started Tips:",
+      "tips": [
+        "Start with words you want to learn",
+        "Keep definitions clear and concise", 
+        "Add a few cards, then practice with Study mode",
+        "The spaced repetition system will help you remember"
+      ],
+      "noCardsFiltered": "No flashcards found.",
+      "noCardsFilteredHelp": "All cards might be filtered out by your current settings.",
+      "includeAllCards": "Include All Cards"
+    },
+    "table": {
+      "word": "Word",
+      "definition": "Definition",
+      "status": "Status",
+      "nextReview": "Next Review",
+      "incorrect": "Incorrect",
+      "actions": "Actions"
+    },
+    "status": {
+      "new": "New",
+      "ready": "Ready for review",
+      "scheduled": "Scheduled for later",
+      "completed": "Completed (never review)",
+      "hard": "Hard to remember (hidden)"
+    },
+    "emptyState": {
+      "noCards": "No flashcards yet!",
+      "noCardsMessage": "{{userName}} doesn't have any flashcards yet. Create your first flashcard to start learning!",
+      "createFirstCard": "📝 Create Your First Card",
+      "noCardsFiltered": "No flashcards found.",
+      "cardsFilteredOut": "All cards might be filtered out by your current settings.",
+      "includeAllCards": "Include All Cards",
+      "tipsTitle": "💡 Getting Started Tips:",
+      "tip1": "Start with words you want to learn",
+      "tip2": "Keep definitions clear and concise",
+      "tip3": "Add a few cards, then practice with Study mode",
+      "tip4": "The spaced repetition system will help you remember"
+    },
+    "search": {
+      "noResults": "No flashcards match your search criteria.",
+      "tryAdjusting": "Try adjusting your search term or filters.",
+      "clearSearch": "Clear Search",
+      "noteTitle": "Note",
+      "noteDesc": "Search is applied to the current page only. Use pagination to search through all cards."
+    },
+    "deleteModal": {
+      "title": "Confirm Delete",
+      "confirmation": "Are you sure you want to delete this flashcard?"
+    },
+    "legend": {
+      "title": "Legend",
+      "ready": "🟢 Ready for review",
+      "scheduled": "🔵 Scheduled for later",
+      "completed": "⚫ Completed (never review)",
+      "hard": "🔴 Hard to remember (hidden)",
+      "actionsTitle": "Actions",
+      "actionsDesc": "Edit to update word/definition, Delete to remove permanently"
+    },
+    "success": {
+      "update": "Flashcard updated successfully!",
+      "delete": "Flashcard deleted successfully!"
+    },
+    "errors": {
+      "validation": "Please fill in both word and definition.",
+      "duplicate": "Word already exists or invalid data provided.",
+      "update": "Error updating flashcard. Please try again.",
+      "delete": "Error deleting flashcard. Please try again.",
+      "load": "Error loading flashcards. Please try again."
+    }
+  },
+  "view": {
+    "title": "All Flashcards ({{count}})",
+    "emptyState": {
+      "noCards": "No flashcards found. Create your first flashcard to get started!"
+    },
+    "table": {
+      "word": "Word",
+      "definition": "Definition",
+      "status": "Status",
+      "nextReview": "Next Review",
+      "incorrectCount": "Incorrect Count",
+      "max": "Max"
+    },
+    "bins": {
+      "new": "New",
+      "5seconds": "5 seconds",
+      "25seconds": "25 seconds",
+      "2minutes": "2 minutes",
+      "10minutes": "10 minutes",
+      "1hour": "1 hour",
+      "5hours": "5 hours",
+      "1day": "1 day",
+      "5days": "5 days",
+      "25days": "25 days",
+      "4months": "4 months",
+      "completed": "Never (Completed)",
+      "default": "Bin {{binNumber}}"
+    },
+    "status": {
+      "hardToRemember": "Hard to Remember"
+    },
+    "schedule": {
+      "readyNow": "Ready now",
+      "never": "Never",
+      "minutes": "{{count}} minutes",
+      "hours": "{{count}} hours",
+      "days": "{{count}} days"
+    },
+    "legend": {
+      "title": "Legend",
+      "ready": "🟢 Ready for review",
+      "scheduled": "🔵 Scheduled for later",
+      "completed": "⚫ Completed (never review)",
+      "hard": "🔴 Hard to remember (hidden)"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "loadingCards": "Loading flashcards...",
+    "loadingError": "Error loading flashcards. Please try again.",
+    "loadingUsers": "Loading users...",
+    "noUserSelected": "Please select a user first.",
+    "refresh": "Refresh",
+    "retry": "Retry",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "required": "Required",
+    "optional": "Optional"
+  },
+  "spaced_repetition": {
+    "bins": {
+      "0": "New",
+      "1": "5s",
+      "2": "25s",
+      "3": "2m",
+      "4": "10m",
+      "5": "1h",
+      "6": "5h",
+      "7": "1d",
+      "8": "5d",
+      "9": "25d",
+      "10": "4mo",
+      "11": "Done"
+    },
+    "binsFull": {
+      "0": "New",
+      "1": "5 seconds",
+      "2": "25 seconds",
+      "3": "2 minutes",
+      "4": "10 minutes",
+      "5": "1 hour",
+      "6": "5 hours",
+      "7": "1 day",
+      "8": "5 days",
+      "9": "25 days",
+      "10": "4 months",
+      "11": "Done"
+    }
+  },
+  "time": {
+    "never": "Never",
+    "now": "Now",
+    "justNow": "Just now",
+    "secondsAgo": "{{count}} seconds ago",
+    "minutesAgo": "{{count}} minutes ago",
+    "hoursAgo": "{{count}} hours ago",
+    "daysAgo": "{{count}} days ago"
+  },
+  "language": {
+    "title": "Language",
+    "select": "Select Language",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "chinese": "中文",
+    "japanese": "日本語"
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "app": {
+    "title": "Karteikarten-Lern-App",
+    "subtitle": "Beherrschen Sie Vokabeln mit verteilter Wiederholung"
+  },
+  "users": {
+    "selectUser": "Benutzer Auswählen",
+    "currentUser": "Aktueller Benutzer",
+    "switchUser": "Benutzer Wechseln",
+    "createFirstUser": "Ersten Benutzer Erstellen",
+    "addNewUser": "Neuen Benutzer Hinzufügen",
+    "deleteUser": "Benutzer Löschen",
+    "confirmDelete": "Löschen Bestätigen",
+    "confirmDeleteMessage": "Sind Sie sicher, dass Sie den Benutzer \"{{name}}\" löschen möchten?",
+    "confirmDeleteWarning": "Dies wird auch alle Karteikarten dieses Benutzers löschen!",
+    "userManagement": "Benutzerverwaltung",
+    "chooseUser": "Wählen Sie einen Benutzer:",
+    "enterUserName": "Benutzername eingeben...",
+    "createUser": "Benutzer Erstellen",
+    "creating": "Erstellt...",
+    "noUsers": "Keine Benutzer gefunden. Erstellen Sie Ihren ersten Benutzer, um zu beginnen!",
+    "maxUsersReached": "Maximum von 5 Benutzern erreicht. Löschen Sie einen Benutzer, um einen neuen hinzuzufügen.",
+    "welcome": {
+      "title": "Willkommen!",
+      "subtitle": "Wählen oder erstellen Sie einen Benutzer, um die Karteikarten-Anwendung zu verwenden. Jeder Benutzer kann seine eigenen Karteikarten und Lernfortschritt haben."
+    },
+    "validation": {
+      "nameRequired": "Bitte geben Sie einen Benutzernamen ein.",
+      "nameExists": "Benutzer '{{name}}' existiert bereits",
+      "nameEmpty": "Benutzername darf nicht leer sein"
+    },
+    "success": {
+      "created": "Benutzer '{{name}}' erfolgreich erstellt!",
+      "deleted": "Benutzer '{{name}}' und seine {{count}} Karteikarten erfolgreich gelöscht!"
+    },
+    "errors": {
+      "load": "Fehler beim Laden der Benutzer. Bitte versuchen Sie es erneut.",
+      "create": "Fehler beim Erstellen des Benutzers. Bitte versuchen Sie es erneut.",
+      "delete": "Fehler beim Löschen des Benutzers. Bitte versuchen Sie es erneut."
+    }
+  },
+  "navigation": {
+    "study": "Lernen",
+    "create": "Karte Erstellen",
+    "manage": "Karten Verwalten",
+    "view": "Alle Karten Anzeigen"
+  },
+  "study": {
+    "title": "Lernsitzung",
+    "clickToReveal": "Klicken Sie, um die Definition zu enthüllen",
+    "showAnswer": "Antwort Zeigen",
+    "iGotIt": "Ich hab's verstanden!",
+    "iDidntGetIt": "Ich hab's nicht verstanden",
+    "nextCard": "Nächste Karte",
+    "loading": "Laden...",
+    "noCards": "Keine Karten zur Wiederholung verfügbar.",
+    "noCardsUser": "Keine Karten zur Wiederholung verfügbar für {{user}}.",
+    "checkForCards": "Nach Karten suchen",
+    "refresh": "Aktualisieren",
+    "selectUserFirst": "Bitte wählen Sie zuerst einen Benutzer aus.",
+    "statusMessages": {
+      "readyToReview": "Bereit zum Wiederholen: {{ready}} Karten, Neue Karten: {{new}}",
+      "temporarilyDone": "Sie sind vorübergehend fertig; kommen Sie später zurück, um mehr Wörter zu wiederholen.",
+      "permanentlyDone": "Sie haben keine Wörter mehr zu wiederholen; Sie sind dauerhaft fertig!",
+      "errorGeneric": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      "errorNetwork": "Netzwerkfehler. Überprüfen Sie Ihre Verbindung.",
+      "errorReview": "Fehler beim Übermitteln der Bewertung. Bitte versuchen Sie es erneut."
+    }
+  },
+  "create": {
+    "title": "Neue Karteikarte Erstellen",
+    "titleWithUser": "Neue Karteikarte für {{user}} Erstellen",
+    "word": "Wort",
+    "wordPlaceholder": "Geben Sie das zu lernende Wort ein",
+    "definition": "Definition",
+    "definitionPlaceholder": "Geben Sie die Definition oder Erklärung ein",
+    "createButton": "Karteikarte Erstellen",
+    "selectUserFirst": "Bitte wählen Sie zuerst einen Benutzer aus.",
+    "success": "Karteikarte erfolgreich erstellt!",
+    "successWithUser": "Karteikarte erfolgreich für {{user}} erstellt!",
+    "errorCreate": "Fehler beim Erstellen der Karteikarte. Bitte versuchen Sie es erneut.",
+    "validation": {
+      "requiredFields": "Bitte füllen Sie sowohl Wort als auch Definition aus.",
+      "wordExists": "Wort existiert bereits oder ungültige Daten wurden bereitgestellt.",
+      "wordTooLong": "Das Wort muss weniger als 100 Zeichen haben",
+      "definitionTooLong": "Die Definition muss weniger als 1000 Zeichen haben",
+      "noUserSelected": "Kein Benutzer ausgewählt"
+    }
+  },
+  "manage": {
+    "title": "Karteikarten Verwalten",
+    "titleWithUser": "Karteikarten Verwalten - {{user}}",
+    "totalCards": "Gesamte Karten: {{count}}",
+    "showing": "Zeige {{count}} von {{total}} Karteikarten",
+    "showingFiltered": "Zeige {{count}} von {{total}} Karteikarten (gefiltert: {{filtered}} Ergebnisse)",
+    "refresh": "Aktualisieren",
+    "edit": "Bearbeiten",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "confirmDelete": "Karte Löschen",
+    "confirmDeleteMessage": "Sind Sie sicher, dass Sie die Karte \"{{word}}\" löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "search": {
+      "label": "Suche:",
+      "placeholder": "Nach Wort oder Definition suchen...",
+      "noResults": "Keine Karteikarten entsprechen Ihren Suchkriterien.",
+      "noResultsHelp": "Versuchen Sie, Ihren Suchbegriff oder Filter anzupassen.",
+      "clearSearch": "Suche Löschen"
+    },
+    "pagination": {
+      "itemsPerPage": "Elemente pro Seite:",
+      "includeHard": "Schwere Karten einschließen",
+      "page": "Seite {{current}} von {{total}}",
+      "first": "« Erste",
+      "prev": "‹ Zurück",
+      "next": "Weiter ›",
+      "last": "Letzte »"
+    },
+    "emptyState": {
+      "noCards": "Noch keine Karteikarten!",
+      "noCardsMessage": "{{user}} hat noch keine Karteikarten. Erstellen Sie Ihre erste Karteikarte, um mit dem Lernen zu beginnen!",
+      "createFirstCard": "📝 Erste Karte Erstellen",
+      "gettingStarted": "💡 Tipps für den Einstieg:",
+      "tips": [
+        "Beginnen Sie mit Wörtern, die Sie lernen möchten",
+        "Halten Sie Definitionen klar und prägnant",
+        "Fügen Sie einige Karten hinzu, dann üben Sie mit dem Lernmodus",
+        "Das Wiederholungssystem wird Ihnen beim Merken helfen"
+      ],
+      "noCardsFiltered": "Keine Karteikarten gefunden.",
+      "noCardsFilteredHelp": "Alle Karten könnten durch Ihre aktuellen Einstellungen herausgefiltert sein.",
+      "includeAllCards": "Alle Karten Einschließen"
+    },
+    "table": {
+      "word": "Wort",
+      "definition": "Definition",
+      "status": "Status",
+      "nextReview": "Nächste Wiederholung",
+      "incorrect": "Falsch",
+      "actions": "Aktionen"
+    },
+    "status": {
+      "new": "Neu",
+      "ready": "Bereit zur Wiederholung",
+      "scheduled": "Für später geplant",
+      "completed": "Abgeschlossen (nie wiederholen)",
+      "hard": "Schwer zu merken (versteckt)"
+    },
+    "emptyState": {
+      "noCards": "Noch keine Karteikarten!",
+      "noCardsMessage": "{{userName}} hat noch keine Karteikarten. Erstellen Sie Ihre erste Karteikarte, um zu lernen!",
+      "createFirstCard": "📝 Ihre Erste Karte Erstellen",
+      "noCardsFiltered": "Keine Karteikarten gefunden.",
+      "cardsFilteredOut": "Alle Karten könnten durch Ihre aktuellen Einstellungen gefiltert sein.",
+      "includeAllCards": "Alle Karten Einschließen",
+      "tipsTitle": "💡 Erste Schritte Tipps:",
+      "tip1": "Beginnen Sie mit Wörtern, die Sie lernen möchten",
+      "tip2": "Halten Sie Definitionen klar und prägnant",
+      "tip3": "Fügen Sie einige Karten hinzu, dann üben Sie mit dem Studienmodus",
+      "tip4": "Das System der gestaffelten Wiederholung hilft Ihnen beim Merken"
+    },
+    "search": {
+      "noResults": "Keine Karteikarten entsprechen Ihren Suchkriterien.",
+      "tryAdjusting": "Versuchen Sie, Ihren Suchbegriff oder Filter anzupassen.",
+      "clearSearch": "Suche Löschen",
+      "noteTitle": "Hinweis",
+      "noteDesc": "Die Suche gilt nur für die aktuelle Seite. Verwenden Sie die Paginierung, um alle Karten zu durchsuchen."
+    },
+    "deleteModal": {
+      "title": "Löschen Bestätigen",
+      "confirmation": "Sind Sie sicher, dass Sie diese Karteikarte löschen möchten?"
+    },
+    "legend": {
+      "title": "Legende",
+      "ready": "🟢 Bereit zur Wiederholung",
+      "scheduled": "🔵 Für später geplant",
+      "completed": "⚫ Abgeschlossen (nie wiederholen)",
+      "hard": "🔴 Schwer zu merken (versteckt)",
+      "actionsTitle": "Aktionen",
+      "actionsDesc": "Bearbeiten um Wort/Definition zu aktualisieren, Löschen um dauerhaft zu entfernen"
+    },
+    "success": {
+      "update": "Karteikarte erfolgreich aktualisiert!",
+      "delete": "Karteikarte erfolgreich gelöscht!"
+    },
+    "errors": {
+      "validation": "Bitte füllen Sie sowohl Wort als auch Definition aus.",
+      "duplicate": "Wort existiert bereits oder ungültige Daten bereitgestellt.",
+      "update": "Fehler beim Aktualisieren der Karteikarte. Bitte versuchen Sie es erneut.",
+      "delete": "Fehler beim Löschen der Karteikarte. Bitte versuchen Sie es erneut.",
+      "load": "Fehler beim Laden der Karteikarten. Bitte versuchen Sie es erneut."
+    }
+  },
+  "view": {
+    "title": "Alle Karteikarten ({{count}})",
+    "emptyState": {
+      "noCards": "Keine Karteikarten gefunden. Erstellen Sie Ihre erste Karteikarte, um zu beginnen!"
+    },
+    "table": {
+      "word": "Wort",
+      "definition": "Definition",
+      "status": "Status",
+      "nextReview": "Nächste Wiederholung",
+      "incorrectCount": "Anzahl Falsch",
+      "max": "Max"
+    },
+    "bins": {
+      "new": "Neu",
+      "5seconds": "5 Sekunden",
+      "25seconds": "25 Sekunden",
+      "2minutes": "2 Minuten",
+      "10minutes": "10 Minuten",
+      "1hour": "1 Stunde",
+      "5hours": "5 Stunden",
+      "1day": "1 Tag",
+      "5days": "5 Tage",
+      "25days": "25 Tage",
+      "4months": "4 Monate",
+      "completed": "Nie (Abgeschlossen)",
+      "default": "Box {{binNumber}}"
+    },
+    "status": {
+      "hardToRemember": "Schwer zu Merken"
+    },
+    "schedule": {
+      "readyNow": "Jetzt bereit",
+      "never": "Nie",
+      "minutes": "{{count}} Minuten",
+      "hours": "{{count}} Stunden",
+      "days": "{{count}} Tage"
+    },
+    "legend": {
+      "title": "Legende",
+      "ready": "🟢 Bereit zur Wiederholung",
+      "scheduled": "🔵 Für später geplant",
+      "completed": "⚫ Abgeschlossen (nie wiederholen)",
+      "hard": "🔴 Schwer zu merken (versteckt)"
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "loadingCards": "Karteikarten laden...",
+    "loadingError": "Fehler beim Laden der Karten. Bitte versuchen Sie es erneut.",
+    "loadingUsers": "Benutzer laden...",
+    "noUserSelected": "Bitte wählen Sie zuerst einen Benutzer aus.",
+    "refresh": "Aktualisieren",
+    "retry": "Wiederholen",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "warning": "Warnung",
+    "info": "Information",
+    "confirm": "Bestätigen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "close": "Schließen",
+    "yes": "Ja",
+    "no": "Nein",
+    "required": "Erforderlich",
+    "optional": "Optional"
+  },
+  "spaced_repetition": {
+    "bins": {
+      "0": "Neu",
+      "1": "5s",
+      "2": "25s",
+      "3": "2m",
+      "4": "10m",
+      "5": "1h",
+      "6": "5h",
+      "7": "1T",
+      "8": "5T",
+      "9": "25T",
+      "10": "4Mo",
+      "11": "Fertig"
+    },
+    "binsFull": {
+      "0": "Neu",
+      "1": "5 Sekunden",
+      "2": "25 Sekunden",
+      "3": "2 Minuten",
+      "4": "10 Minuten",
+      "5": "1 Stunde",
+      "6": "5 Stunden",
+      "7": "1 Tag",
+      "8": "5 Tage",
+      "9": "25 Tage",
+      "10": "4 Monate",
+      "11": "Fertig"
+    }
+  },
+  "time": {
+    "never": "Nie",
+    "now": "Jetzt",
+    "justNow": "Gerade eben",
+    "secondsAgo": "vor {{count}} Sekunden",
+    "minutesAgo": "vor {{count}} Minuten",
+    "hoursAgo": "vor {{count}} Stunden",
+    "daysAgo": "vor {{count}} Tagen"
+  },
+  "language": {
+    "title": "Sprache",
+    "select": "Sprache Auswählen",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "chinese": "中文",
+    "japanese": "日本語"
+  }
+}

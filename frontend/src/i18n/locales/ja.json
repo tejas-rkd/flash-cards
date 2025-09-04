@@ -1,0 +1,291 @@
+{
+  "app": {
+    "title": "フラッシュカード学習アプリ",
+    "subtitle": "間隔反復で語彙をマスターしよう"
+  },
+  "users": {
+    "selectUser": "ユーザーを選択",
+    "currentUser": "現在のユーザー",
+    "switchUser": "ユーザーを切り替え",
+    "createFirstUser": "最初のユーザーを作成",
+    "addNewUser": "新しいユーザーを追加",
+    "deleteUser": "ユーザーを削除",
+    "confirmDelete": "削除を確認",
+    "confirmDeleteMessage": "ユーザー\"{{name}}\"を削除してもよろしいですか？",
+    "confirmDeleteWarning": "このユーザーに属するすべてのフラッシュカードも削除されます！",
+    "userManagement": "ユーザー管理",
+    "chooseUser": "ユーザーを選択：",
+    "enterUserName": "ユーザー名を入力...",
+    "createUser": "ユーザーを作成",
+    "creating": "作成中...",
+    "noUsers": "ユーザーが見つかりません。最初のユーザーを作成して開始してください！",
+    "maxUsersReached": "最大5ユーザーに達しました。新しいユーザーを追加するには、ユーザーを削除してください。",
+    "welcome": {
+      "title": "ようこそ！",
+      "subtitle": "フラッシュカードアプリケーションを使用するにはユーザーを選択または作成してください。各ユーザーは独自のフラッシュカードセットと学習進度を持つことができます。"
+    },
+    "validation": {
+      "nameRequired": "ユーザー名を入力してください。",
+      "nameExists": "ユーザー'{{name}}'は既に存在します",
+      "nameEmpty": "ユーザー名は空にできません"
+    },
+    "success": {
+      "created": "ユーザー'{{name}}'が正常に作成されました！",
+      "deleted": "ユーザー'{{name}}'とその{{count}}枚のフラッシュカードが正常に削除されました！"
+    },
+    "errors": {
+      "load": "ユーザーの読み込みでエラーが発生しました。もう一度試してください。",
+      "create": "ユーザーの作成でエラーが発生しました。もう一度試してください。",
+      "delete": "ユーザーの削除でエラーが発生しました。もう一度試してください。"
+    }
+  },
+  "navigation": {
+    "study": "学習",
+    "create": "カード作成",
+    "manage": "カード管理",
+    "view": "全カード表示"
+  },
+  "study": {
+    "title": "学習セッション",
+    "clickToReveal": "クリックして定義を表示",
+    "showAnswer": "答えを表示",
+    "iGotIt": "わかりました！",
+    "iDidntGetIt": "わかりませんでした",
+    "nextCard": "次のカード",
+    "loading": "読み込み中...",
+    "noCards": "復習可能なカードがありません。",
+    "noCardsUser": "{{user}}の復習可能なカードがありません。",
+    "checkForCards": "カードを確認",
+    "refresh": "更新",
+    "selectUserFirst": "まずユーザーを選択してください。",
+    "statusMessages": {
+      "readyToReview": "復習準備完了：{{ready}}枚のカード、新しいカード：{{new}}枚",
+      "temporarilyDone": "一時的に完了しました。後でもっと単語を復習するために戻ってきてください。",
+      "permanentlyDone": "復習する単語がもうありません。完全に完了しました！",
+      "errorGeneric": "エラーが発生しました。もう一度試してください。",
+      "errorNetwork": "ネットワークエラー。接続を確認してください。",
+      "errorReview": "復習の送信でエラーが発生しました。もう一度試してください。"
+    }
+  },
+  "create": {
+    "title": "新しいフラッシュカードを作成",
+    "titleWithUser": "{{user}}用の新しいフラッシュカードを作成",
+    "word": "単語",
+    "wordPlaceholder": "学習する単語を入力",
+    "definition": "定義",
+    "definitionPlaceholder": "定義または説明を入力",
+    "createButton": "フラッシュカードを作成",
+    "selectUserFirst": "まずユーザーを選択してください。",
+    "success": "フラッシュカードが正常に作成されました！",
+    "successWithUser": "{{user}}用のフラッシュカードが正常に作成されました！",
+    "errorCreate": "フラッシュカードの作成でエラーが発生しました。もう一度試してください。",
+    "validation": {
+      "requiredFields": "単語と定義の両方を入力してください。",
+      "wordExists": "単語がすでに存在するか、無効なデータが提供されました。",
+      "wordTooLong": "単語は100文字未満である必要があります",
+      "definitionTooLong": "定義は1000文字未満である必要があります",
+      "noUserSelected": "ユーザーが選択されていません"
+    }
+  },
+  "manage": {
+    "title": "フラッシュカード管理",
+    "titleWithUser": "フラッシュカード管理 - {{user}}",
+    "totalCards": "総カード数：{{count}}",
+    "showing": "{{count}}枚中{{total}}枚のフラッシュカードを表示",
+    "showingFiltered": "{{count}}枚中{{total}}枚のフラッシュカードを表示（フィルター済み：{{filtered}}件）",
+    "refresh": "更新",
+    "edit": "編集",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "confirmDelete": "カードを削除",
+    "confirmDeleteMessage": "カード\"{{word}}\"を削除してもよろしいですか？この操作は元に戻せません。",
+    "search": {
+      "label": "検索：",
+      "placeholder": "単語または定義で検索...",
+      "noResults": "検索条件に一致するフラッシュカードがありません。",
+      "noResultsHelp": "検索語句やフィルターを調整してみてください。",
+      "clearSearch": "検索をクリア"
+    },
+    "pagination": {
+      "itemsPerPage": "ページあたりの項目数：",
+      "includeHard": "難しいカードを含める",
+      "page": "{{current}}ページ / {{total}}ページ",
+      "first": "« 最初",
+      "prev": "‹ 前へ",
+      "next": "次へ ›",
+      "last": "最後 »"
+    },
+    "emptyState": {
+      "noCards": "フラッシュカードがまだありません！",
+      "noCardsMessage": "{{user}}はまだフラッシュカードを持っていません。最初のフラッシュカードを作成して学習を始めましょう！",
+      "createFirstCard": "📝 最初のカードを作成",
+      "gettingStarted": "💡 はじめに：",
+      "tips": [
+        "学習したい単語から始める",
+        "定義を明確で簡潔に保つ",
+        "いくつかカードを追加してから学習モードで練習する",
+        "間隔反復システムが記憶をサポートします"
+      ],
+      "noCardsFiltered": "フラッシュカードが見つかりません。",
+      "noCardsFilteredHelp": "現在の設定によってすべてのカードがフィルターされている可能性があります。",
+      "includeAllCards": "すべてのカードを含める"
+    },
+    "table": {
+      "word": "単語",
+      "definition": "定義",
+      "status": "ステータス",
+      "nextReview": "次の復習",
+      "incorrectCount": "エラー回数",
+      "actions": "アクション"
+    },
+    "status": {
+      "new": "新規",
+      "ready": "復習準備完了",
+      "scheduled": "後で予定",
+      "completed": "完了（復習しない）",
+      "hard": "覚えにくい（非表示）"
+    },
+    "legend": {
+      "title": "凡例：",
+      "actions": "アクション：",
+      "actionsNote": "編集で単語/定義を更新、削除で永久に削除",
+      "searchNote": "検索は現在のページにのみ適用されます。すべてのカードを検索するにはページネーションを使用してください。",
+      "ready": "🟢 復習準備完了",
+      "scheduled": "🔵 後で予定",
+      "completed": "⚫ 完了（復習しない）",
+      "hard": "🔴 覚えにくい（非表示）"
+    },
+    "success": {
+      "update": "フラッシュカードが正常に更新されました！",
+      "delete": "フラッシュカードが正常に削除されました！"
+    },
+    "errors": {
+      "load": "フラッシュカードの読み込みでエラーが発生しました。もう一度試してください。",
+      "update": "フラッシュカードの更新でエラーが発生しました。もう一度試してください。",
+      "delete": "フラッシュカードの削除でエラーが発生しました。もう一度試してください。"
+    }
+  },
+  "view": {
+    "title": "全フラッシュカード ({{count}})",
+    "emptyState": {
+      "noCards": "フラッシュカードが見つかりません。最初のカードを作成して始めましょう！"
+    },
+    "table": {
+      "word": "単語",
+      "definition": "定義",
+      "status": "ステータス",
+      "nextReview": "次の復習",
+      "incorrectCount": "不正解回数",
+      "max": "最大"
+    },
+    "bins": {
+      "new": "新規",
+      "5seconds": "5秒",
+      "25seconds": "25秒",
+      "2minutes": "2分",
+      "10minutes": "10分",
+      "1hour": "1時間",
+      "5hours": "5時間",
+      "1day": "1日",
+      "5days": "5日",
+      "25days": "25日",
+      "4months": "4ヶ月",
+      "completed": "なし（完了）",
+      "default": "ボックス {{binNumber}}"
+    },
+    "status": {
+      "hardToRemember": "覚えにくい"
+    },
+    "schedule": {
+      "readyNow": "今すぐ準備完了",
+      "never": "なし",
+      "minutes": "{{count}} 分",
+      "hours": "{{count}} 時間",
+      "days": "{{count}} 日"
+    },
+    "legend": {
+      "title": "凡例",
+      "ready": "🟢 復習準備完了",
+      "scheduled": "🔵 後で予定",
+      "completed": "⚫ 完了（復習なし）",
+      "hard": "🔴 覚えにくい（非表示）"
+    }
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "loadingCards": "カード読み込み中...",
+    "loadingError": "カードの読み込みでエラーが発生しました。再試行してください。",
+    "noUserSelected": "まずユーザーを選択してください。",
+    "refresh": "更新",
+    "retry": "再試行",
+    "error": "エラー",
+    "success": "成功",
+    "warning": "警告",
+    "info": "情報",
+    "confirm": "確認",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "yes": "はい",
+    "no": "いいえ",
+    "required": "必須",
+    "optional": "任意",
+    "retry": "再試行",
+    "refresh": "更新",
+    "loadingUsers": "ユーザー読み込み中...",
+    "loadingCards": "フラッシュカード読み込み中...",
+    "noUserSelected": "まずユーザーを選択してください。"
+  },
+  "spaced_repetition": {
+    "bins": {
+      "0": "新規",
+      "1": "5秒",
+      "2": "25秒",
+      "3": "2分",
+      "4": "10分",
+      "5": "1時間",
+      "6": "5時間",
+      "7": "1日",
+      "8": "5日",
+      "9": "25日",
+      "10": "4ヶ月",
+      "11": "完了"
+    },
+    "binsFull": {
+      "0": "新規",
+      "1": "5秒",
+      "2": "25秒",
+      "3": "2分",
+      "4": "10分",
+      "5": "1時間",
+      "6": "5時間",
+      "7": "1日",
+      "8": "5日",
+      "9": "25日",
+      "10": "4ヶ月",
+      "11": "完了"
+    }
+  },
+  "time": {
+    "never": "なし",
+    "now": "今",
+    "justNow": "たった今",
+    "secondsAgo": "{{count}}秒前",
+    "minutesAgo": "{{count}}分前",
+    "hoursAgo": "{{count}}時間前",
+    "daysAgo": "{{count}}日前"
+  },
+  "language": {
+    "title": "言語",
+    "select": "言語を選択",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "chinese": "中文",
+    "japanese": "日本語"
+  }
+}

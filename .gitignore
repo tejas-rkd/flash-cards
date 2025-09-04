@@ -1,0 +1,32 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+env/
+venv/
+.env/
+.venv/
+*.egg-info/
+.installed.cfg
+
+# React-specific ignores
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+coverage/
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# Common ignores (e.g., build output, logs, IDE files)
+build/
+dist/
+*.log
+*.tmp
+*.swp
+*.bak
+.idea/
+.vscode/

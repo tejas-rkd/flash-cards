@@ -1,0 +1,315 @@
+{
+  "app": {
+    "title": "Application de Cartes Mémoire",
+    "subtitle": "Maîtrisez le vocabulaire avec la répétition espacée"
+  },
+  "users": {
+    "selectUser": "Sélectionner un Utilisateur",
+    "currentUser": "Utilisateur Actuel",
+    "switchUser": "Changer d'Utilisateur",
+    "createFirstUser": "Créer le Premier Utilisateur",
+    "addNewUser": "Ajouter un Nouvel Utilisateur",
+    "deleteUser": "Supprimer l'Utilisateur",
+    "confirmDelete": "Confirmer la Suppression",
+    "confirmDeleteMessage": "Êtes-vous sûr de vouloir supprimer l'utilisateur \"{{name}}\" ?",
+    "confirmDeleteWarning": "Cela supprimera également toutes les cartes appartenant à cet utilisateur !",
+    "userManagement": "Gestion des Utilisateurs",
+    "chooseUser": "Choisissez un utilisateur :",
+    "enterUserName": "Entrez le nom d'utilisateur...",
+    "createUser": "Créer l'Utilisateur",
+    "creating": "Création...",
+    "noUsers": "Aucun utilisateur trouvé. Créez votre premier utilisateur pour commencer !",
+    "maxUsersReached": "Maximum de 5 utilisateurs atteint. Supprimez un utilisateur pour en ajouter un nouveau.",
+    "welcome": {
+      "title": "Bienvenue !",
+      "subtitle": "Sélectionnez ou créez un utilisateur pour commencer à utiliser l'application de cartes mémoire. Chaque utilisateur peut avoir son propre ensemble de cartes et son propre progrès d'étude."
+    },
+    "validation": {
+      "nameRequired": "Veuillez entrer un nom d'utilisateur.",
+      "nameExists": "L'utilisateur '{{name}}' existe déjà",
+      "nameEmpty": "Le nom d'utilisateur ne peut pas être vide"
+    },
+    "success": {
+      "created": "Utilisateur '{{name}}' créé avec succès !",
+      "deleted": "Utilisateur '{{name}}' et ses {{count}} cartes supprimés avec succès !"
+    },
+    "errors": {
+      "load": "Erreur lors du chargement des utilisateurs. Veuillez réessayer.",
+      "create": "Erreur lors de la création de l'utilisateur. Veuillez réessayer.",
+      "delete": "Erreur lors de la suppression de l'utilisateur. Veuillez réessayer."
+    }
+  },
+  "navigation": {
+    "study": "Étudier",
+    "create": "Créer une Carte",
+    "manage": "Gérer les Cartes",
+    "view": "Voir Toutes les Cartes"
+  },
+  "study": {
+    "title": "Session d'Étude",
+    "clickToReveal": "Cliquez pour révéler la définition",
+    "showAnswer": "Montrer la Réponse",
+    "iGotIt": "J'ai compris !",
+    "iDidntGetIt": "Je n'ai pas compris",
+    "nextCard": "Carte Suivante",
+    "loading": "Chargement...",
+    "noCards": "Aucune carte disponible pour révision.",
+    "noCardsUser": "Aucune carte disponible pour révision pour {{user}}.",
+    "checkForCards": "Vérifier les cartes",
+    "refresh": "Actualiser",
+    "selectUserFirst": "Veuillez d'abord sélectionner un utilisateur.",
+    "statusMessages": {
+      "readyToReview": "Prêt à réviser : {{ready}} cartes, Nouvelles cartes : {{new}}",
+      "temporarilyDone": "Vous avez temporairement terminé ; revenez plus tard pour réviser plus de mots.",
+      "permanentlyDone": "Vous n'avez plus de mots à réviser ; vous avez définitivement terminé !",
+      "errorGeneric": "Une erreur s'est produite. Veuillez réessayer.",
+      "errorNetwork": "Erreur réseau. Vérifiez votre connexion.",
+      "errorReview": "Erreur lors de l'envoi de la révision. Veuillez réessayer."
+    }
+  },
+  "create": {
+    "title": "Créer une Nouvelle Carte",
+    "titleWithUser": "Créer une Nouvelle Carte pour {{user}}",
+    "word": "Mot",
+    "wordPlaceholder": "Entrez le mot à apprendre",
+    "definition": "Définition",
+    "definitionPlaceholder": "Entrez la définition ou l'explication",
+    "createButton": "Créer la Carte",
+    "selectUserFirst": "Veuillez d'abord sélectionner un utilisateur.",
+    "success": "Carte créée avec succès !",
+    "successWithUser": "Carte créée avec succès pour {{user}} !",
+    "errorCreate": "Erreur lors de la création de la carte. Veuillez réessayer.",
+    "validation": {
+      "requiredFields": "Veuillez remplir à la fois le mot et la définition.",
+      "wordExists": "Le mot existe déjà ou des données invalides ont été fournies.",
+      "wordTooLong": "Le mot doit contenir moins de 100 caractères",
+      "definitionTooLong": "La définition doit contenir moins de 1000 caractères",
+      "noUserSelected": "Aucun utilisateur sélectionné"
+    }
+  },
+  "manage": {
+    "title": "Gérer les Cartes",
+    "titleWithUser": "Gérer les Cartes - {{user}}",
+    "totalCards": "Total des Cartes : {{count}}",
+    "showing": "Affichage de {{count}} sur {{total}} cartes",
+    "showingFiltered": "Affichage de {{count}} sur {{total}} cartes (filtrées : {{filtered}} résultats)",
+    "refresh": "Actualiser",
+    "edit": "Modifier",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "confirmDelete": "Supprimer la Carte",
+    "confirmDeleteMessage": "Êtes-vous sûr de vouloir supprimer la carte \"{{word}}\" ? Cette action ne peut pas être annulée.",
+    "search": {
+      "label": "Recherche :",
+      "placeholder": "Rechercher par mot ou définition...",
+      "noResults": "Aucune carte ne correspond à vos critères de recherche.",
+      "noResultsHelp": "Essayez d'ajuster votre terme de recherche ou vos filtres.",
+      "clearSearch": "Effacer la Recherche"
+    },
+    "pagination": {
+      "itemsPerPage": "Éléments par page :",
+      "includeHard": "Inclure les cartes difficiles",
+      "page": "Page {{current}} sur {{total}}",
+      "first": "« Première",
+      "prev": "‹ Précédente",
+      "next": "Suivante ›",
+      "last": "Dernière »"
+    },
+    "emptyState": {
+      "noCards": "Aucune carte encore !",
+      "noCardsMessage": "{{user}} n'a encore aucune carte. Créez votre première carte pour commencer à apprendre !",
+      "createFirstCard": "📝 Créer Votre Première Carte",
+      "gettingStarted": "💡 Conseils pour Commencer :",
+      "tips": [
+        "Commencez avec des mots que vous voulez apprendre",
+        "Gardez les définitions claires et concises",
+        "Ajoutez quelques cartes, puis pratiquez avec le mode Étude",
+        "Le système de répétition espacée vous aidera à retenir"
+      ],
+      "noCardsFiltered": "Aucune carte trouvée.",
+      "noCardsFilteredHelp": "Toutes les cartes peuvent être filtrées par vos paramètres actuels.",
+      "includeAllCards": "Inclure Toutes les Cartes"
+    },
+    "table": {
+      "word": "Mot",
+      "definition": "Définition",
+      "status": "Statut",
+      "nextReview": "Prochaine Révision",
+      "incorrect": "Incorrectes",
+      "actions": "Actions"
+    },
+    "status": {
+      "new": "Nouveau",
+      "ready": "Prêt pour révision",
+      "scheduled": "Programmé pour plus tard",
+      "completed": "Terminé (jamais réviser)",
+      "hard": "Difficile à retenir (caché)"
+    },
+    "emptyState": {
+      "noCards": "Pas encore de cartes !",
+      "noCardsMessage": "{{userName}} n'a pas encore de cartes. Créez votre première carte pour commencer à apprendre !",
+      "createFirstCard": "📝 Créer Votre Première Carte",
+      "noCardsFiltered": "Aucune carte trouvée.",
+      "cardsFilteredOut": "Toutes les cartes pourraient être filtrées par vos paramètres actuels.",
+      "includeAllCards": "Inclure Toutes les Cartes",
+      "tipsTitle": "💡 Conseils pour Commencer :",
+      "tip1": "Commencez avec des mots que vous voulez apprendre",
+      "tip2": "Gardez les définitions claires et concises",
+      "tip3": "Ajoutez quelques cartes, puis pratiquez avec le mode Étude",
+      "tip4": "Le système de répétition espacée vous aidera à mémoriser"
+    },
+    "search": {
+      "noResults": "Aucune carte ne correspond à vos critères de recherche.",
+      "tryAdjusting": "Essayez d'ajuster votre terme de recherche ou vos filtres.",
+      "clearSearch": "Effacer la Recherche",
+      "noteTitle": "Note",
+      "noteDesc": "La recherche s'applique uniquement à la page actuelle. Utilisez la pagination pour rechercher dans toutes les cartes."
+    },
+    "deleteModal": {
+      "title": "Confirmer la Suppression",
+      "confirmation": "Êtes-vous sûr de vouloir supprimer cette carte ?"
+    },
+    "legend": {
+      "title": "Légende :",
+      "actions": "Actions :",
+      "actionsNote": "Modifier pour mettre à jour mot/définition, Supprimer pour retirer définitivement",
+      "searchNote": "La recherche s'applique uniquement à la page actuelle. Utilisez la pagination pour rechercher dans toutes les cartes.",
+      "ready": "🟢 Prêt pour révision",
+      "scheduled": "🔵 Programmé pour plus tard",
+      "completed": "⚫ Terminé (jamais réviser)",
+      "hard": "🔴 Difficile à retenir (caché)",
+      "actionsTitle": "Actions",
+      "actionsDesc": "Modifier pour mettre à jour mot/définition, Supprimer pour enlever définitivement"
+    },
+    "success": {
+      "update": "Carte mise à jour avec succès !",
+      "delete": "Carte supprimée avec succès !"
+    },
+    "errors": {
+      "validation": "Veuillez remplir à la fois le mot et la définition.",
+      "duplicate": "Le mot existe déjà ou des données invalides ont été fournies.",
+      "update": "Erreur lors de la mise à jour de la carte. Veuillez réessayer.",
+      "delete": "Erreur lors de la suppression de la carte. Veuillez réessayer.",
+      "load": "Erreur lors du chargement des cartes. Veuillez réessayer."
+    }
+  },
+  "view": {
+    "title": "Toutes les Cartes ({{count}})",
+    "emptyState": {
+      "noCards": "Aucune carte trouvée. Créez votre première carte pour commencer !"
+    },
+    "table": {
+      "word": "Mot",
+      "definition": "Définition",
+      "status": "Statut",
+      "nextReview": "Prochaine Révision",
+      "incorrectCount": "Nombre d'Incorrectes",
+      "max": "Max"
+    },
+    "bins": {
+      "new": "Nouveau",
+      "5seconds": "5 secondes",
+      "25seconds": "25 secondes",
+      "2minutes": "2 minutes",
+      "10minutes": "10 minutes",
+      "1hour": "1 heure",
+      "5hours": "5 heures",
+      "1day": "1 jour",
+      "5days": "5 jours",
+      "25days": "25 jours",
+      "4months": "4 mois",
+      "completed": "Jamais (Terminé)",
+      "default": "Bac {{binNumber}}"
+    },
+    "status": {
+      "hardToRemember": "Difficile à Retenir"
+    },
+    "schedule": {
+      "readyNow": "Prêt maintenant",
+      "never": "Jamais",
+      "minutes": "{{count}} minutes",
+      "hours": "{{count}} heures",
+      "days": "{{count}} jours"
+    },
+    "legend": {
+      "title": "Légende",
+      "ready": "🟢 Prêt pour révision",
+      "scheduled": "🔵 Programmé pour plus tard",
+      "completed": "⚫ Terminé (jamais réviser)",
+      "hard": "🔴 Difficile à retenir (caché)"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "loadingCards": "Chargement des cartes...",
+    "loadingError": "Erreur de chargement des cartes. Veuillez réessayer.",
+    "noUserSelected": "Veuillez d'abord sélectionner un utilisateur.",
+    "refresh": "Actualiser",
+    "retry": "Réessayer",
+    "error": "Erreur",
+    "success": "Succès",
+    "warning": "Avertissement",
+    "info": "Information",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "yes": "Oui",
+    "no": "Non",
+    "required": "Requis",
+    "optional": "Optionnel",
+    "loadingUsers": "Chargement des utilisateurs..."
+  },
+  "spaced_repetition": {
+    "bins": {
+      "0": "Nouveau",
+      "1": "5s",
+      "2": "25s",
+      "3": "2m",
+      "4": "10m",
+      "5": "1h",
+      "6": "5h",
+      "7": "1j",
+      "8": "5j",
+      "9": "25j",
+      "10": "4mo",
+      "11": "Fini"
+    },
+    "binsFull": {
+      "0": "Nouveau",
+      "1": "5 secondes",
+      "2": "25 secondes",
+      "3": "2 minutes",
+      "4": "10 minutes",
+      "5": "1 heure",
+      "6": "5 heures",
+      "7": "1 jour",
+      "8": "5 jours",
+      "9": "25 jours",
+      "10": "4 mois",
+      "11": "Fini"
+    }
+  },
+  "time": {
+    "never": "Jamais",
+    "now": "Maintenant",
+    "justNow": "À l'instant",
+    "secondsAgo": "il y a {{count}} secondes",
+    "minutesAgo": "il y a {{count}} minutes",
+    "hoursAgo": "il y a {{count}} heures",
+    "daysAgo": "il y a {{count}} jours"
+  },
+  "language": {
+    "title": "Langue",
+    "select": "Sélectionner la Langue",
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français",
+    "german": "Deutsch",
+    "chinese": "中文",
+    "japanese": "日本語"
+  }
+}
