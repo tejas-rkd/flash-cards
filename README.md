@@ -1,11 +1,4 @@
-# Flashcard Learning App (Multiuser Edition)
-
-## 🌐 Live Demo
-
-**Try it now:** [http://flash-card.live](http://flash-card.live)
-
-> ***Note:*** This demo uses HTTP (no SSL certificate) for testing purposes.
-
+# Flashcard Learning App
 A full-stack flashcard application implementing spaced repetition learning with multiuser support, using React frontend, FastAPI backend, and PostgreSQL database.
 
 ## Deliverables
